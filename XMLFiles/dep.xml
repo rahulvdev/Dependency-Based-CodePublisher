@@ -1,0 +1,370 @@
+
+  <DB>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlParser\XmlParser.h
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlParser\XmlParser.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlParser\XmlParser.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\itokcollection.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.h
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.h
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.h
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.h
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\itokcollection.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\itokcollection.h
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\itokcollection.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlParser\XmlParser.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlParser\XmlParser.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.cpp
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.cpp
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlParser\XmlParser.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.cpp
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+      </Children>
+    </Element>
+    <Element>
+      <Key>
+        F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlParser\XmlParser.cpp
+      </Key>
+      <Children>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlParser\XmlParser.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlParser\XmlParser.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlDocument\XmlDocument.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\Tokenizer.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElement\XmlElement.h
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\XmlElementParts\xmlElementParts.cpp
+        </Child>
+        <Child>
+          F:\OOD projects\Project 4\CodeAnalyzerEx\Repository\SourceFiles\Category1\XmlDocument\Utilities\Utilities.h
+        </Child>
+      </Children>
+    </Element>
+  </DB>

@@ -1,0 +1,304 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="..\CSSfiles\CSSstart.css">
+<script src="..\JavaScript\JSFile.js">
+</script>
+</head>
+<body>
+<pre>
+ !----------------------------------------------------------------------------
+typetable.cpp.htm - Help file for Project #3
+Published 19 Mar 2017
+Jim Fawcett, CSE687 - Object Oriented Design, Spring 2017
+
+
+Note:
+-Markup characters in the text part, enclosed in &lt;pre&gt;...&lt;/pre&gt; have to be
+replaced with escape sequences, e.g., < becomes &lt and > becomes &gt
+-Be careful that you don't replace genuine markup characters with escape
+sequences, e.g., everything outside of the &lt;pre&gt;...&lt;/pre&gt; section.
+----------------------------------------------------------------------------->
+ </pre>
+<h3>typetable.cpp</h3>
+<hr/>
+<div class = "indent">
+<h4>Dependencies:
+
+<ul style="list - style - type:disc">
+<li><a href="typetable.h.htm">typetable.h</a></li>
+<li><a href="typetable.cpp.htm">typetable.cpp</a></li>
+</ul>
+</div>
+<hr/>
+<pre>
+///////////////////////////////////////////////////////////////////////////
+// TypeTable.cpp - It is used to generate type information from AST data //
+//                                                                       //
+// Rahul Vijaydev, CSE687 - Object Oriented Design, Spring 2017          //
+///////////////////////////////////////////////////////////////////////////
+//
+//Description: This file is used to generate a typetable that contains information about
+//classes,methods,global functions,enums and structs
+//
+
+#include "typetable.h"
+
+
+//Constructor for TypeAnalysis
+//Initializes AST,ScopeStack and Toker instances
+TypeAnalysis::TypeAnalysis() :ASTref_(Repository::getInstance()-&gt;AST()),
+scopeStack_(Repository::getInstance()-&gt;scopeStack()),
+toker_(*(Repository::getInstance()-&gt;Toker())) {
+}
+
+//Returns a list of all files from the typetable
+//by attempting to match the token against each entry in the type table
+std::vector&lt;std::string&gt; TypeAnalysis::returnDependentFiles(std::string token) {
+<button id="but1" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but1_div">
+	std::vector&lt;std::string&gt; depFileVect;
+	std::vector&lt;std::string&gt; emptyVect;
+	if (typeTable.find(token) != typeTable.end()) {
+		std::vector&lt;std::unordered_map&lt;std::string, std::string&gt;&gt; mapVect = typeTable[token];
+		for (std::vector&lt;std::unordered_map&lt;std::string, std::string&gt;&gt;::iterator it = mapVect.begin(); it != mapVect.end(); it++) {
+			std::unordered_map&lt;std::string, std::string&gt; mapForTok = *it;
+			depFileVect.push_back(mapForTok["filename"]);
+		}
+	}
+	else {
+	}
+	return depFileVect;
+}
+</div>
+//Iniitializes type analysis
+void TypeAnalysis::startTypeAnalysis()
+{
+<button id="but2" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but2_div">
+	std::cout &lt;&lt; "\n  starting type analysis:\n";
+	std::cout &lt;&lt; "\n  scanning AST and displaying important things:";
+	std::cout &lt;&lt; "\n -----------------------------------------------";
+	ASTNode* pRoot = ASTref_.root();
+	searchAST(pRoot);
+	getGlobalFunctionInfo(Repository::getInstance()-&gt;getGlobalScope());
+}
+</div>
+//Checks if node is either of class,struct or enum
+bool TypeAnalysis::doDisplay(ASTNode* pNode)
+{
+<button id="but3" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but3_div">
+	static std::string toDisplay[] = {
+		"class","function","struct", "enum"
+	};
+	for (std::string type : toDisplay)
+	{
+		if (pNode-&gt;type_ == type)
+			return true;
+	}
+	return false;
+}
+</div>
+//Displays typetable content 
+void TypeAnalysis::showTypeTable() {
+<button id="but4" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but4_div">
+	for (auto it : typeTable) {
+		std::cout &lt;&lt; std::endl;
+		std::cout &lt;&lt; it.first;
+		std::cout &lt;&lt; std::endl;
+		std::cout &lt;&lt; "----------------------------------" &lt;&lt; std::endl;
+		std::vector&lt;std::unordered_map&lt;std::string, std::string&gt;&gt; valueVect = it.second;
+		for (std::vector&lt;std::unordered_map &lt;std::string, std::string&gt;&gt;::iterator it = valueVect.begin(); it != valueVect.end(); it++) {
+			std::unordered_map &lt;std::string, std::string&gt; inst = *it;
+			for (auto item : inst) {
+				std::cout &lt;&lt; std::setw(20)&lt;&lt;item.first &lt;&lt; std::setw(20)&lt;&lt; item.second &lt;&lt; std::endl;
+			}
+			std::cout &lt;&lt; std::endl;
+		}
+		std::cout &lt;&lt; std::endl;
+		std::cout &lt;&lt; std::endl;
+		std::cout &lt;&lt; "-------------------------------------" &lt;&lt; std::endl;
+	}
+}
+</div>
+//Used to get global function information
+void TypeAnalysis::getGlobalFunctionInfo(ASTNode * globalNode) {
+<button id="but5" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but5_div">
+	std::cout &lt;&lt; "\n---------------------------------------\n";
+	for (auto node : globalNode-&gt;children_) {
+		if (node-&gt;type_ == "function") {
+			if (node-&gt;name_ != "void")
+				storeGlobalFunction(node);
+		}
+	}
+	std::cout &lt;&lt; "\n---------------------------------------\n";
+}
+</div>
+
+//Stores global function information
+void TypeAnalysis::storeGlobalFunction(ASTNode* pNode)
+{
+<button id="but6" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but6_div">
+	std::vector&lt;std::unordered_map&lt;std::string, std::string&gt;&gt; glFuncVect;
+	std::unordered_map&lt;std::string, std::string&gt; glFuncMap;
+	if (globalfunctionMap.find(pNode-&gt;name_) == globalfunctionMap.end()) {
+		glFuncMap["file"] = pNode-&gt;path_;
+		std::ostringstream ost;
+		ost &lt;&lt; pNode-&gt;startLineCount_;
+		std::string lineNum = ost.str();
+		ost.str();
+		ost.clear();
+		glFuncMap["lineNumber"] = lineNum;
+		ost &lt;&lt; pNode-&gt;endLineCount_;
+		std::string endLine = ost.str();
+		glFuncMap["lineNumberEnd"] = endLine;
+		glFuncVect.push_back(glFuncMap);
+
+	}
+	else {
+		glFuncVect = globalfunctionMap[pNode-&gt;name_];
+		std::unordered_map&lt;std::string, std::string&gt; glFuncMap;
+		glFuncMap["file"] = pNode-&gt;path_;
+		std::ostringstream ost;
+		ost &lt;&lt; pNode-&gt;startLineCount_;
+		std::string linNum = ost.str();
+		ost.str("");
+		ost.clear();
+		glFuncMap["lineNumber"] = linNum;
+		ost &lt;&lt; pNode-&gt;endLineCount_;
+		std::string endLine = ost.str();
+		glFuncMap["lineNumberEnd"] = endLine;
+		glFuncVect.push_back(glFuncMap);
+	}
+	globalfunctionMap[pNode-&gt;name_] = glFuncVect;
+}
+</div>
+
+//Returns instance of globalfunction map
+std::unordered_map&lt;std::string,std::vector&lt;std::unordered_map&lt;std::string,std::string&gt;&gt;&gt;& TypeAnalysis::getGlobFuncMap()
+{
+<button id="but7" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but7_div">
+	return globalfunctionMap;
+}
+</div>
+//Depth first search over the abstract syntax tree
+//Builds type table
+void TypeAnalysis::searchAST(ASTNode* pNode)
+<button id="but8" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but8_div">
+{	static std::string path = "";
+	if (pNode-&gt;path_ != path)
+	{
+		std::cout &lt;&lt; "\n    -- " &lt;&lt; pNode-&gt;path_ &lt;&lt; "\\" &lt;&lt; pNode-&gt;package_;
+		path = pNode-&gt;path_;}
+	if (doDisplay(pNode))
+	{
+		std::unordered_map&lt;std::string, std::string&gt; mapElem;
+		std::unordered_map&lt;std::string, std::string&gt; lineNoVal;
+		mapElem["type"] = pNode-&gt;type_;
+		mapElem["filename"] = pNode-&gt;path_;
+		mapElem["namespace"] = namespaceStack.top();
+		std::ostringstream ost;
+		ost &lt;&lt; pNode-&gt;startLineCount_;
+		std::string lineNumber = ost.str();
+		ost.str("");
+		ost.clear();
+		mapElem["lineNum"] = lineNumber;
+		ost &lt;&lt; pNode-&gt;endLineCount_;
+		std::string lineNumberEnd = ost.str();
+		mapElem["lineNumEnd"] = lineNumberEnd;
+		bool eqCheck=checkIfLineStEnEqual(lineNumber, lineNumberEnd);
+			lineNoVal["startLine"] = lineNumber;
+			lineNoVal["endLine"] = lineNumberEnd;
+		std::vector&lt;std::unordered_map&lt;std::string, std::string&gt;&gt; lineNoVect;
+		if (!eqCheck) {
+			if (lineNoMap.find(pNode-&gt;path_) == lineNoMap.end()) {
+				lineNoVect.push_back(lineNoVal);}
+			else {
+				lineNoVect = lineNoMap[pNode-&gt;path_];
+				lineNoVect.push_back(lineNoVal);}
+			lineNoMap[pNode-&gt;path_] = lineNoVect;}
+		else {}
+		std::vector&lt;std::unordered_map&lt;std::string, std::string&gt;&gt; initVect;
+		if (typeTable.find(pNode-&gt;name_) == typeTable.end()) {
+			initVect.push_back(mapElem);
+		}
+		else {
+			initVect = typeTable[pNode-&gt;name_];
+			initVect.push_back(mapElem);}
+		typeTable[pNode-&gt;name_] = initVect;}
+	if (pNode-&gt;type_ == "namespace") {
+		namespaceStack.push(pNode-&gt;name_);}
+	for (auto pChild : pNode-&gt;children_) {
+		searchAST(pChild);}
+	if (pNode-&gt;type_ == "namespace") {
+		namespaceStack.pop();}
+}
+</div>
+//Checks if start and end lines of nodes are equal
+bool TypeAnalysis::checkIfLineStEnEqual(std::string start, std::string end)
+{
+<button id="but9" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but9_div">
+	int startVal = std::stoi(start);
+	int endVal = std::stoi(end);
+	if (startVal == endVal)
+		return true;
+	else
+		return false;
+	
+}
+</div>
+//Method to display line numbers for classes,methods and functions
+void TypeAnalysis::displayLineNoInfo()
+{
+<button id="but10" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but10_div">
+	for (auto it : lineNoMap) {
+		std::cout &lt;&lt; std::endl;
+		std::cout &lt;&lt; it.first;
+		std::cout &lt;&lt; std::endl;
+		std::cout &lt;&lt; "----------------------------------" &lt;&lt; std::endl;
+		std::vector&lt;std::unordered_map&lt;std::string, std::string&gt;&gt; valueVect = it.second;
+		for (std::vector&lt;std::unordered_map &lt;std::string, std::string&gt;&gt;::iterator it = valueVect.begin(); it != valueVect.end(); it++) {
+			std::unordered_map &lt;std::string, std::string&gt; inst = *it;
+			for (auto item : inst) {
+				std::cout &lt;&lt; std::setw(20) &lt;&lt; item.first &lt;&lt; std::setw(20) &lt;&lt; item.second &lt;&lt; std::endl;
+			}
+			std::cout &lt;&lt; std::endl;
+		}
+		std::cout &lt;&lt; std::endl;
+		std::cout &lt;&lt; std::endl;
+		std::cout &lt;&lt; "-------------------------------------" &lt;&lt; std::endl;
+	}
+}
+</div>
+std::unordered_map&lt;std::string,TypeAnalysis::vectOfMap&gt;& TypeAnalysis::getLineNumMap()
+{
+<button id="but11" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but11_div">
+	return lineNoMap;
+}
+</div>
+
+#ifdef TYPETABLE
+
+int main() {
+<button id="but12" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but12_div">
+	TypeAnalysis typAnal;
+	typAnal.startTypeAnalysis();
+	std::cout &lt;&lt; "-------------------------------\n";
+	std::cout &lt;&lt; "Displaying Type Table Content\n";
+	typAnal.showTypeTable();
+	std::cout &lt;&lt; "-------------------------------\n";
+}
+</div>
+#endif // TYPETABLE
+</pre>
+</body>
+</html>

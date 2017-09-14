@@ -1,0 +1,130 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="..\CSSfiles\CSSstart.css">
+<script src="..\JavaScript\JSFile.js">
+</script>
+</head>
+<body>
+<pre>
+ !----------------------------------------------------------------------------
+typetable.h.htm - Help file for Project #3
+Published 19 Mar 2017
+Jim Fawcett, CSE687 - Object Oriented Design, Spring 2017
+
+
+Note:
+-Markup characters in the text part, enclosed in &lt;pre&gt;...&lt;/pre&gt; have to be
+replaced with escape sequences, e.g., < becomes &lt and > becomes &gt
+-Be careful that you don't replace genuine markup characters with escape
+sequences, e.g., everything outside of the &lt;pre&gt;...&lt;/pre&gt; section.
+----------------------------------------------------------------------------->
+ </pre>
+<h3>typetable.h</h3>
+<hr/>
+<div class = "indent">
+<h4>Dependencies:
+
+<ul style="list - style - type:disc">
+<li><a href="typetable.h.htm">typetable.h</a></li>
+<li><a href="typetable.cpp.htm">typetable.cpp</a></li>
+</ul>
+</div>
+<hr/>
+<pre>
+#pragma once
+#pragma once
+/////////////////////////////////////////////////////////////////////////////////////////
+//// TypeTable.h - stores file names, type names ,namesspace for each type defined     //
+////                                                                                   //
+//// Rahul Vijaydev,CSE687 - Object Oriented Design, Spring 2017					     // 
+////                                                                                   //
+////////////////////////////////////////////////////////////////////////////////////////
+///*
+//Module Operations:
+//==================
+//This module defines an TypeAnalysis class
+//
+//TypeAnalysis class defines functions to:
+//build dependency table based on type info stored in type table
+//return keys stored in the database
+//return row for a given key from the db
+//show the contents of the dependecy table
+//
+//Public Interface:
+//=================
+//TypeAnalysis();
+//std::vector&lt;std::string&gt; returnDependentFiles(std::string token);
+//void startTypeAnalysis();
+//bool doDisplay(ASTNode* pNode);
+//void searchAST(ASTNode* pNode);
+//void showTypeTable();
+//using uMap = std::unordered_map &lt;std::string, std::string&gt;;
+//
+//void showTypeTable();
+//std::vector&lt;std::string&gt; getTypeDefinationFnames(std::string typeName);
+//
+//* Required Files:
+//* ---------------
+//*   - AbstrSynTree.h
+//*   - ActionsAndRules.h
+//*
+//* Build Process:
+//* --------------
+//*   devenv TypeTable.sln /debug rebuild
+//*
+//* Maintenance History:
+//* --------------------
+//ver 0.1 : 7nd March 2017
+//*
+///*
+//* -
+//*/
+#pragma warning (disable: 4503)
+#include&lt;iostream&gt;
+#include&lt;vector&gt;
+#include &lt;functional&gt;
+#include&lt;string&gt;
+#include&lt;stack&gt;
+#include "../Parser/ActionsAndRules.h"
+#include "../AbstractSyntaxTree/AbstrSynTree.h"
+
+using namespace CodeAnalysis;
+
+class TypeAnalysis {
+<button id="but0" type="button" onclick="triggerMethod(this)">+</button>
+<div class="noShow" id="but0_div">
+
+public:
+
+	using uMap = std::unordered_map &lt;std::string, std::string&gt;;
+	using vectStr = std::vector&lt;std::string&gt;;
+	using vectOfMap = std::vector&lt;std::unordered_map &lt;std::string, std::string&gt;&gt;;
+
+
+	TypeAnalysis();
+	std::vector&lt;std::string&gt; returnDependentFiles(std::string token);
+	void startTypeAnalysis();
+	bool doDisplay(ASTNode* pNode);
+	void searchAST(ASTNode* pNode);
+	void showTypeTable();
+	void getGlobalFunctionInfo(ASTNode * globalNode);
+	void storeGlobalFunction(ASTNode* pNode);
+	std::unordered_map&lt;std::string, std::vector&lt;std::unordered_map&lt;std::string,std::string&gt;&gt;&gt;& getGlobFuncMap();
+	void displayLineNoInfo();
+	std::unordered_map&lt;std::string, vectOfMap&gt;& getLineNumMap();
+	bool checkIfLineStEnEqual(std::string start, std::string end);
+
+
+private:
+	std::unordered_map&lt;std::string, std::vector&lt;uMap&gt;&gt; typeTable;
+	std::unordered_map&lt;std::string, std::vector&lt;uMap&gt;&gt; lineNoMap;
+	std::unordered_map&lt;std::string,vectOfMap&gt; globalfunctionMap;
+	std::vector&lt;uMap&gt; valueVect;
+	std::stack&lt;std::string&gt; namespaceStack;
+	AbstrSynTree& ASTref_;
+	ScopeStack&lt;ASTNode*&gt; scopeStack_;
+	Scanner::Toker& toker_;
+};
+</pre>
+</body>
+</html>
